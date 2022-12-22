@@ -1,0 +1,1 @@
+Hello folks, learning JS from scratch level is the main purpose of this repository. Let's see how long I can continue it.

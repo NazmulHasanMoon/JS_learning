@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            console.log(a);// undifined
+            var a=1; // life cycle entier the function
+            console.log(a);// 1
+            // console.log(b); // error
+            let b=2; // block scoped
+            b=3;//valid
+            console.log(b);//3
+            var a=3; // valid
+            a=4;//valid
+            console.log(a); // 4
+            //let b=4; // error
+            const c=123;
+            console.log(c);
+            //c=12;// error
+            var name = 'Nazmul';
+            let _midname = 'Hasan';
+            const $lastname = 'Moon';
+            name += _midname + $lastname;
+            console.log(name);
+        </script>
+    </body>
+</html>
