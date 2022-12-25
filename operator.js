@@ -29,7 +29,11 @@ if(x%2 && y%2){ // logical AND operation
 else{
     x++;
 }
-
+console.log(typeof(y));
+// string additon
+y += 'hello';
+console.log(y);
+console.log(typeof(y));
 //Bitwise operators (&,|,~,^,<<,>>,>>>)
 // and, or, not, xor, left shift, right shift, unsigned right shift
 console.log((2&1));// 0
