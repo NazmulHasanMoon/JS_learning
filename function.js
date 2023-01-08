@@ -10,7 +10,7 @@ console.log(hello());
 
 hello = ()=>"hello Nazmul";
 console.log(hello());
-let y =  document.getElementById("username").value;
+let y = "nazmul";
 hello = (val)=>"hello "+val;
 console.log(hello(y));
 hello = function(){
