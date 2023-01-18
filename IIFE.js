@@ -1,8 +1,8 @@
-let arr = ['Nazmul','Moon'];
-let fun=(arr)=>{
+let arr = ['Nazmul','Hasan'];
+((arr)=>{
     arr.push('Moon');
-};
-fun(arr);
+    // console.log(arr);
+})(arr);
 console.log(arr);
 (function callByRef2(arr){
     arr.pop();
