@@ -1,7 +1,8 @@
 class Human{
+    #age; //  mark as private
     constructor(name,age){
         this.name = name;
-        this.age = age;
+        this.#age = age;
     }
     getInfo() {
         return "Name of this person is "+ this.name;
@@ -10,10 +11,10 @@ class Human{
         return this.name;
     }
     get pAge(){
-        return this.age;
+        return this.#age;
     }
     set pAge(age){
-        this.age = age;
+        this.#age = age;
     }
 }
 const person1 = new Human("Nazmul",27);
@@ -31,7 +32,8 @@ class Student extends Human{
         this.dept=dept;
     }
     getStudentInfo(){
-        return "The name of the Student is "+ this.name+". He/She is "+this.age+" and student of "+this.dept; 
+        //return "The name of the Student is "+ this.name+". He/She is "+this.age+" and student of "+this.dept;
+        return "The name of the Student is "+ this.name+". He/She is "+this.pAge+" and student of "+this.dept; // as now age is a private poperty of Human class.Hence we have to take help of the getter.
     }
 }
 let std1 = new Student("Moon",26,"Post Graduation");
